@@ -1,0 +1,22 @@
+xcassets:
+  - inputs:
+    - Millvelorotour/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Millvelorotour/Resources/Images/Images.generated.swift
+  - inputs:
+    - Millvelorotour/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Millvelorotour/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: Millvelorotour/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Millvelorotour/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
