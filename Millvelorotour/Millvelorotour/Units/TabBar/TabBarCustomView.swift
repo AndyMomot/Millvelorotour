@@ -79,7 +79,7 @@ struct TabBarCustomView: View {
 
 #Preview {
     ZStack {
-        Asset.preloaderBg.swiftUIImage
+        Asset.background.swiftUIImage
             .resizable()
             .ignoresSafeArea()
         VStack {

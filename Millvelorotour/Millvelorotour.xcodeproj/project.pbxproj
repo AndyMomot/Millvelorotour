@@ -42,7 +42,15 @@
 		4731441C2CC94ECF00655DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143CD2CC94ECF00655DBD /* AppDelegate.swift */; };
 		4731441D2CC94ECF00655DBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143CE2CC94ECF00655DBD /* SceneDelegate.swift */; };
 		4731441E2CC94ECF00655DBD /* FAQModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143D02CC94ECF00655DBD /* FAQModel.swift */; };
-		4731441F2CC94ECF00655DBD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143D12CC94ECF00655DBD /* CategoryModel.swift */; };
+		473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */; };
+		473865C12CCBB904005D77E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865C02CCBB904005D77E8 /* HomeView.swift */; };
+		473865C32CCBB90C005D77E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865C22CCBB90C005D77E8 /* HomeViewModel.swift */; };
+		473865C62CCBBA95005D77E8 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865C52CCBBA95005D77E8 /* NavigationView.swift */; };
+		473865CA2CCBC8FD005D77E8 /* NoBicyclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865C92CCBC8FD005D77E8 /* NoBicyclesView.swift */; };
+		473865CC2CCBCD47005D77E8 /* BicycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865CB2CCBCD47005D77E8 /* BicycleCell.swift */; };
+		473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865CD2CCBCFD3005D77E8 /* NavigationButton.swift */; };
+		473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865D02CCBD311005D77E8 /* CreateBicycleView.swift */; };
+		473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */; };
 		47DD594B2CC8E329008A623A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD59492CC8E329008A623A /* Main.storyboard */; };
 		47DD594D2CC8E32A008A623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594C2CC8E32A008A623A /* Assets.xcassets */; };
 		47DD59502CC8E32A008A623A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594E2CC8E32A008A623A /* LaunchScreen.storyboard */; };
@@ -84,7 +92,16 @@
 		473143CD2CC94ECF00655DBD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473143CE2CC94ECF00655DBD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		473143D02CC94ECF00655DBD /* FAQModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQModel.swift; sourceTree = "<group>"; };
-		473143D12CC94ECF00655DBD /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleModel.swift; sourceTree = "<group>"; };
+		473865C02CCBB904005D77E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		473865C22CCBB90C005D77E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		473865C52CCBBA95005D77E8 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		473865C72CCBBB2B005D77E8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		473865C92CCBC8FD005D77E8 /* NoBicyclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBicyclesView.swift; sourceTree = "<group>"; };
+		473865CB2CCBCD47005D77E8 /* BicycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleCell.swift; sourceTree = "<group>"; };
+		473865CD2CCBCFD3005D77E8 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		473865D02CCBD311005D77E8 /* CreateBicycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBicycleView.swift; sourceTree = "<group>"; };
+		473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBicycleViewModel.swift; sourceTree = "<group>"; };
 		473C1E9B2CC950AD007FD140 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
 		473C1E9C2CC950AD007FD140 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		473C1E9D2CC950AD007FD140 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYULTRALIGHTITALIC.OTF; sourceTree = "<group>"; };
@@ -189,6 +206,7 @@
 		473143652CC94ECF00655DBD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				473865C72CCBBB2B005D77E8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */,
 				473C1EA22CC950AD007FD140 /* SFPRODISPLAYBLACKITALIC.OTF */,
 				473C1E9C2CC950AD007FD140 /* SFPRODISPLAYBOLD.OTF */,
 				473C1E9F2CC950AD007FD140 /* SFPRODISPLAYHEAVYITALIC.OTF */,
@@ -232,6 +250,7 @@
 		473143792CC94ECF00655DBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				473865C42CCBBA34005D77E8 /* NavigationView */,
 				4731437E2CC94ECF00655DBD /* WebView */,
 				473143802CC94ECF00655DBD /* DynamicHeightTextField */,
 				473143822CC94ECF00655DBD /* InputField */,
@@ -332,6 +351,7 @@
 		473143982CC94ECF00655DBD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				473865BE2CCBB8E7005D77E8 /* HomeFlow */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -376,9 +396,55 @@
 			isa = PBXGroup;
 			children = (
 				473143D02CC94ECF00655DBD /* FAQModel.swift */,
-				473143D12CC94ECF00655DBD /* CategoryModel.swift */,
+				473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		473865BE2CCBB8E7005D77E8 /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				473865BF2CCBB8F4005D77E8 /* Home */,
+				473865CF2CCBD304005D77E8 /* CreateBicycle */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		473865BF2CCBB8F4005D77E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				473865C82CCBC8C2005D77E8 /* Views */,
+				473865C02CCBB904005D77E8 /* HomeView.swift */,
+				473865C22CCBB90C005D77E8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		473865C42CCBBA34005D77E8 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				473865C52CCBBA95005D77E8 /* NavigationView.swift */,
+				473865CD2CCBCFD3005D77E8 /* NavigationButton.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		473865C82CCBC8C2005D77E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				473865C92CCBC8FD005D77E8 /* NoBicyclesView.swift */,
+				473865CB2CCBCD47005D77E8 /* BicycleCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		473865CF2CCBD304005D77E8 /* CreateBicycle */ = {
+			isa = PBXGroup;
+			children = (
+				473865D02CCBD311005D77E8 /* CreateBicycleView.swift */,
+				473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */,
+			);
+			path = CreateBicycle;
 			sourceTree = "<group>";
 		};
 		47DD59372CC8E329008A623A = {
@@ -513,15 +579,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */,
 				473143EB2CC94ECF00655DBD /* ImagePicker.swift in Sources */,
 				473143FB2CC94ECF00655DBD /* RootContentView.swift in Sources */,
 				473143D62CC94ECF00655DBD /* Double+Additions.swift in Sources */,
 				473143F52CC94ECF00655DBD /* PreloaderView.swift in Sources */,
+				473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */,
+				473865C12CCBB904005D77E8 /* HomeView.swift in Sources */,
 				473143D22CC94ECF00655DBD /* NotificationManager.swift in Sources */,
 				473143D92CC94ECF00655DBD /* String+Additions.swift in Sources */,
 				473143F22CC94ECF00655DBD /* BackButton.swift in Sources */,
 				473143DB2CC94ECF00655DBD /* Images.generated.swift in Sources */,
-				4731441F2CC94ECF00655DBD /* CategoryModel.swift in Sources */,
 				473143F82CC94ECF00655DBD /* TabBarCustomView.swift in Sources */,
 				473143F42CC94ECF00655DBD /* NextButton.swift in Sources */,
 				473143D52CC94ECF00655DBD /* UINavigationController+Additions.swift in Sources */,
@@ -529,6 +597,7 @@
 				473143F12CC94ECF00655DBD /* InputField.swift in Sources */,
 				4731441C2CC94ECF00655DBD /* AppDelegate.swift in Sources */,
 				4731441A2CC94ECF00655DBD /* OnboardingViewTabView.swift in Sources */,
+				473865CA2CCBC8FD005D77E8 /* NoBicyclesView.swift in Sources */,
 				473143EF2CC94ECF00655DBD /* SwiftUIViewWebView.swift in Sources */,
 				473143E22CC94ECF00655DBD /* Fonts.generated.swift in Sources */,
 				473143F32CC94ECF00655DBD /* CircularProgressBar.swift in Sources */,
@@ -542,10 +611,15 @@
 				473143DD2CC94ECF00655DBD /* Colors.generated.swift in Sources */,
 				473144192CC94ECF00655DBD /* OnboardingViewModel.swift in Sources */,
 				473143FA2CC94ECF00655DBD /* RootContentViewModel.swift in Sources */,
+				473865C32CCBB90C005D77E8 /* HomeViewModel.swift in Sources */,
 				4731441E2CC94ECF00655DBD /* FAQModel.swift in Sources */,
 				4731441B2CC94ECF00655DBD /* RootViewController.swift in Sources */,
+				473865C62CCBBA95005D77E8 /* NavigationView.swift in Sources */,
+				473865CC2CCBCD47005D77E8 /* BicycleCell.swift in Sources */,
+				473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */,
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,
 				473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */,
+				473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,10 +27,11 @@ internal enum Fonts {
     internal static let lightItalic = FontConvertible(name: "SFProDisplay-LightItalic", family: "SF Pro Display", path: "SFPRODISPLAYLIGHTITALIC.OTF")
     internal static let medium = FontConvertible(name: "SFProDisplay-Medium", family: "SF Pro Display", path: "SFPRODISPLAYMEDIUM.OTF")
     internal static let regular = FontConvertible(name: "SFProDisplay-Regular", family: "SF Pro Display", path: "SFPRODISPLAYREGULAR.OTF")
+    internal static let semibold = FontConvertible(name: "SFProDisplay-Semibold", family: "SF Pro Display", path: "FontsFree-Net-SFProDisplay-Semibold.ttf")
     internal static let semiboldItalic = FontConvertible(name: "SFProDisplay-SemiboldItalic", family: "SF Pro Display", path: "SFPRODISPLAYSEMIBOLDITALIC.OTF")
     internal static let thinItalic = FontConvertible(name: "SFProDisplay-ThinItalic", family: "SF Pro Display", path: "SFPRODISPLAYTHINITALIC.OTF")
     internal static let ultralightItalic = FontConvertible(name: "SFProDisplay-UltralightItalic", family: "SF Pro Display", path: "SFPRODISPLAYULTRALIGHTITALIC.OTF")
-    internal static let all: [FontConvertible] = [blackItalic, bold, heavyItalic, lightItalic, medium, regular, semiboldItalic, thinItalic, ultralightItalic]
+    internal static let all: [FontConvertible] = [blackItalic, bold, heavyItalic, lightItalic, medium, regular, semibold, semiboldItalic, thinItalic, ultralightItalic]
   }
   internal static let allCustomFonts: [FontConvertible] = [SFProDisplay.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {

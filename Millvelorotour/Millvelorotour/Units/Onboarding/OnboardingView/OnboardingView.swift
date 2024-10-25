@@ -16,7 +16,7 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
-            Asset.preloaderBg.swiftUIImage
+            Asset.background.swiftUIImage
                 .resizable()
                 .ignoresSafeArea()
             
