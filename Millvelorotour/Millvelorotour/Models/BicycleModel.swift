@@ -13,6 +13,6 @@ struct BicycleModel: Identifiable, Codable {
     var type: String
     var price: Int
     var condition: String
-    var tags: [String]
+    var tags: [TagModel]
     
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NextButton: View {
     var title: String
-    var bgColors: [Color] = []
+    var style: Style = .primary
     var action: () -> Void
     
     var body: some View {
@@ -17,10 +17,10 @@ struct NextButton: View {
             action()
         } label: {
             ZStack {
-                Colors.darkBlue.swiftUIColor
+                style.bgColor
                 
                 Text(title)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(style.textColor)
                     .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 18))
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.8)
@@ -28,14 +28,47 @@ struct NextButton: View {
                 
             }
             .cornerRadius(8, corners: .allCorners)
+            .overlay {
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
+            }
+        }
+    }
+}
+
+extension NextButton {
+    enum Style {
+        case primary
+        case secondary(color: Color)
+        
+        var bgColor: Color {
+            switch self {
+            case .primary:
+                return Colors.darkBlue.swiftUIColor
+            case .secondary(let color):
+                return color
+            }
+        }
+        
+        var textColor: Color {
+            switch self {
+            case .primary:
+                return .white
+            case .secondary:
+                return Colors.darkBlue.swiftUIColor
+            }
         }
     }
 }
 
 #Preview {
     ZStack {
-       
-        NextButton(title: "Komputeryrerererer") {}
-            .frame(width: 200, height: 44)
+        VStack {
+            NextButton(title: "Komputeryrerererer") {}
+                .frame(width: 200, height: 44)
+            
+            NextButton(title: "Komputeryrerererer", style: .secondary(color: .white)) {}
+                .frame(width: 200, height: 44)
+        }
     }
 }

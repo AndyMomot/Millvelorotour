@@ -19,7 +19,7 @@ struct BicycleCell: View {
             HStack {
                 ScrollView {
                     ForEach(model.tags, id: \.self) { tag in
-                        Text(tag)
+                        TagView(model: tag, style: .info)
                     }
                 }
             }
@@ -32,6 +32,6 @@ struct BicycleCell: View {
         type: "Classic",
         price: 1000,
         condition: "New",
-        tags: ["Speed", "Fast"])
+        tags: [.init(title: "Speed"), .init(title: "Fast")])
     )
 }

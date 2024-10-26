@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472D12B82CCCEF6E00E9CDBA /* CreateBicycleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */; };
+		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
+		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
 		473143502CC94E6B00655DBD /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4731434F2CC94E6B00655DBD /* swiftgen.yml */; };
 		473143D22CC94ECF00655DBD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143532CC94ECE00655DBD /* NotificationManager.swift */; };
 		473143D32CC94ECF00655DBD /* DefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143552CC94ECE00655DBD /* DefaultsService.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBicycleField.swift; sourceTree = "<group>"; };
+		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		4731434F2CC94E6B00655DBD /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		473143532CC94ECE00655DBD /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		473143552CC94ECE00655DBD /* DefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsService.swift; sourceTree = "<group>"; };
@@ -129,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472D12B62CCCEF5C00E9CDBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */,
+				472D12BB2CCCF25000E9CDBA /* TagView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		473143512CC94ECE00655DBD /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +412,7 @@
 			children = (
 				473143D02CC94ECF00655DBD /* FAQModel.swift */,
 				473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */,
+				472D12B92CCCF21900E9CDBA /* TagModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,6 +457,7 @@
 		473865CF2CCBD304005D77E8 /* CreateBicycle */ = {
 			isa = PBXGroup;
 			children = (
+				472D12B62CCCEF5C00E9CDBA /* Views */,
 				473865D02CCBD311005D77E8 /* CreateBicycleView.swift */,
 				473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */,
 			);
@@ -579,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472D12B82CCCEF6E00E9CDBA /* CreateBicycleField.swift in Sources */,
 				473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */,
 				473143EB2CC94ECF00655DBD /* ImagePicker.swift in Sources */,
 				473143FB2CC94ECF00655DBD /* RootContentView.swift in Sources */,
@@ -613,11 +631,13 @@
 				473143FA2CC94ECF00655DBD /* RootContentViewModel.swift in Sources */,
 				473865C32CCBB90C005D77E8 /* HomeViewModel.swift in Sources */,
 				4731441E2CC94ECF00655DBD /* FAQModel.swift in Sources */,
+				472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */,
 				4731441B2CC94ECF00655DBD /* RootViewController.swift in Sources */,
 				473865C62CCBBA95005D77E8 /* NavigationView.swift in Sources */,
 				473865CC2CCBCD47005D77E8 /* BicycleCell.swift in Sources */,
 				473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */,
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,
+				472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */,
 				473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */,
 				473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */,
 			);
