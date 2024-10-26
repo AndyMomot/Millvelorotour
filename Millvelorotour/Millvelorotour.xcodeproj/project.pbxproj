@@ -10,6 +10,8 @@
 		472D12B82CCCEF6E00E9CDBA /* CreateBicycleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */; };
 		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
 		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
+		472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BE2CCD05FA00E9CDBA /* ImageStorageManager.swift */; };
+		472D12C12CCD0A0D00E9CDBA /* BicycleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12C02CCD0A0D00E9CDBA /* BicycleInfo.swift */; };
 		473143502CC94E6B00655DBD /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4731434F2CC94E6B00655DBD /* swiftgen.yml */; };
 		473143D22CC94ECF00655DBD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143532CC94ECE00655DBD /* NotificationManager.swift */; };
 		473143D32CC94ECF00655DBD /* DefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143552CC94ECE00655DBD /* DefaultsService.swift */; };
@@ -54,7 +56,6 @@
 		473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865CD2CCBCFD3005D77E8 /* NavigationButton.swift */; };
 		473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865D02CCBD311005D77E8 /* CreateBicycleView.swift */; };
 		473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */; };
-		47DD594B2CC8E329008A623A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD59492CC8E329008A623A /* Main.storyboard */; };
 		47DD594D2CC8E32A008A623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594C2CC8E32A008A623A /* Assets.xcassets */; };
 		47DD59502CC8E32A008A623A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594E2CC8E32A008A623A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,8 @@
 		472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBicycleField.swift; sourceTree = "<group>"; };
 		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		472D12BE2CCD05FA00E9CDBA /* ImageStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStorageManager.swift; sourceTree = "<group>"; };
+		472D12C02CCD0A0D00E9CDBA /* BicycleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleInfo.swift; sourceTree = "<group>"; };
 		4731434F2CC94E6B00655DBD /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		473143532CC94ECE00655DBD /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		473143552CC94ECE00655DBD /* DefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsService.swift; sourceTree = "<group>"; };
@@ -118,7 +121,6 @@
 		473C1EA22CC950AD007FD140 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
 		473C1EA32CC950AD007FD140 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
 		47DD59402CC8E329008A623A /* Millvelorotour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millvelorotour.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		47DD594A2CC8E329008A623A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47DD594C2CC8E32A008A623A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47DD594F2CC8E32A008A623A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47DD59512CC8E32A008A623A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,9 +146,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		472D12BD2CCD05FA00E9CDBA /* ImageStorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				472D12BE2CCD05FA00E9CDBA /* ImageStorageManager.swift */,
+			);
+			path = ImageStorageManager;
+			sourceTree = "<group>";
+		};
 		473143512CC94ECE00655DBD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				472D12BD2CCD05FA00E9CDBA /* ImageStorageManager */,
 				473143522CC94ECE00655DBD /* NotificationManager */,
 				473143542CC94ECE00655DBD /* Defaults */,
 				473143562CC94ECE00655DBD /* FileManager */,
@@ -450,6 +461,7 @@
 			children = (
 				473865C92CCBC8FD005D77E8 /* NoBicyclesView.swift */,
 				473865CB2CCBCD47005D77E8 /* BicycleCell.swift */,
+				472D12C02CCD0A0D00E9CDBA /* BicycleInfo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,7 +503,6 @@
 				4731435E2CC94ECF00655DBD /* Resources */,
 				473143512CC94ECE00655DBD /* Services */,
 				4731438A2CC94ECF00655DBD /* Units */,
-				47DD59492CC8E329008A623A /* Main.storyboard */,
 				47DD594C2CC8E32A008A623A /* Assets.xcassets */,
 				47DD594E2CC8E32A008A623A /* LaunchScreen.storyboard */,
 				47DD59512CC8E32A008A623A /* Info.plist */,
@@ -562,7 +573,6 @@
 				473143DA2CC94ECF00655DBD /* Images.xcassets in Resources */,
 				47DD594D2CC8E32A008A623A /* Assets.xcassets in Resources */,
 				473143DC2CC94ECF00655DBD /* Colors.xcassets in Resources */,
-				47DD594B2CC8E329008A623A /* Main.storyboard in Resources */,
 				473143502CC94E6B00655DBD /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +611,7 @@
 				473143EB2CC94ECF00655DBD /* ImagePicker.swift in Sources */,
 				473143FB2CC94ECF00655DBD /* RootContentView.swift in Sources */,
 				473143D62CC94ECF00655DBD /* Double+Additions.swift in Sources */,
+				472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */,
 				473143F52CC94ECF00655DBD /* PreloaderView.swift in Sources */,
 				473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */,
 				473865C12CCBB904005D77E8 /* HomeView.swift in Sources */,
@@ -638,6 +649,7 @@
 				473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */,
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,
 				472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */,
+				472D12C12CCD0A0D00E9CDBA /* BicycleInfo.swift in Sources */,
 				473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */,
 				473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */,
 			);
@@ -646,14 +658,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		47DD59492CC8E329008A623A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47DD594A2CC8E329008A623A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		47DD594E2CC8E32A008A623A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -32,22 +32,20 @@ struct CreateBicycleView: View {
                     VStack(spacing: 24) {
                         VStack(spacing: 24) {
                             VStack(spacing: 12) {
-                                Button {
-                                    viewModel.showImagePiker.toggle()
-                                } label: {
-                                    if viewModel.image == UIImage() {
-                                        Asset.placeholder.swiftUIImage
-                                            .resizable()
-                                            .scaledToFit()
-                                    } else {
-                                        Image(uiImage: viewModel.image)
-                                            .resizable()
-                                            .scaledToFill()
-                                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                                    }
+                                if viewModel.image == UIImage() {
+                                    Asset.placeholder.swiftUIImage
+                                        .resizable()
+                                        .scaledToFit()
+                                } else {
+                                    Image(uiImage: viewModel.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
                                 }
  
-                                NextButton(title: "Dodaj zdjęcie", style: .secondary(color: .white)) {}
+                                NextButton(title: "Dodaj zdjęcie", style: .secondary(color: .white)) {
+                                    viewModel.showImagePiker.toggle()
+                                }
                                     .frame(height: 44)
                             }
                             
@@ -58,11 +56,14 @@ struct CreateBicycleView: View {
                                         text: $viewModel.type
                                     )
                                     Spacer()
+                                    
                                     CreateBicycleField(
                                         title: "Cena",
                                         text: $viewModel.price
                                     )
+                                    .keyboardType(.numberPad)
                                     Spacer()
+                                    
                                     CreateBicycleField(
                                         title: "Stan",
                                         text: $viewModel.condition
@@ -81,10 +82,17 @@ struct CreateBicycleView: View {
                                         .frame(width: 70, height: 44)
                                 }
                                 
-                                ForEach(viewModel.tags) { tag in
-                                    TagView(model: tag, style: .deletable) { action in
-                                        viewModel.handleTagAction(action)
+                                if !viewModel.tags.isEmpty {
+                                    ScrollView(.horizontal) {
+                                        HStack(spacing: 12) {
+                                            ForEach(viewModel.tags) { tag in
+                                                TagView(model: tag, style: .deletable) { action in
+                                                    viewModel.handleTagAction(action)
+                                                }
+                                            }
+                                        }
                                     }
+                                    .scrollIndicators(.never)
                                 }
                             }
                         }
@@ -94,6 +102,13 @@ struct CreateBicycleView: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
                         }
+                        
+                        NextButton(title: "Dodaj nowe rowery") {
+                            viewModel.createBicycle {
+                                dismiss.callAsFunction()
+                            }
+                        }
+                        .frame(height: 48)
                     }
                 }
                 .scrollIndicators(.never)
@@ -103,6 +118,7 @@ struct CreateBicycleView: View {
         .sheet(isPresented: $viewModel.showImagePiker) {
             ImagePicker(selectedImage: $viewModel.image)
         }
+        .hideKeyboardWhenTappedAround()
     }
 }
 

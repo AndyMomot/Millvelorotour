@@ -17,7 +17,6 @@ extension CreateBicycleView {
         @Published var price = ""
         @Published var condition = ""
         @Published var tag = ""
-        
         @Published var tags: [TagModel] = []
         
         // FUNCTIONS
@@ -30,12 +29,39 @@ extension CreateBicycleView {
         
         func addTag() {
             DispatchQueue.main.async { [weak self] in
-                guard let self, !self.tag.isEmpty else { return }
-                if !self.tags.contains(where: { $0.title == self.tag}) {
-                    let newTag = TagModel(title: self.tag)
-                    self.tags.append(newTag)
-                }
+                guard let self,
+                      !self.tag.isEmpty,
+                      !self.tags.contains(where: { $0.title == self.tag})
+                else { return }
+                let newTag = TagModel(title: self.tag)
+                self.tags.append(newTag)
                 self.tag = ""
+            }
+        }
+        
+        func createBicycle(completion: @escaping () -> Void) {
+            guard validate() else { return }
+            
+            DispatchQueue.global().async { [weak self] in
+                guard let self else { return }
+                
+                let model = BicycleModel(
+                    type: self.type,
+                    price: Int(self.price) ?? .zero,
+                    condition: self.condition,
+                    tags: self.tags
+                )
+                
+                DefaultsService.shared.bicycles.append(model)
+                
+                if let data = self.image.jpegData(compressionQuality: 1) {
+                    let isStorageManager = ImageStorageManager()
+                    isStorageManager.saveImage(data: data, for: model.id)
+                }
+                
+                DispatchQueue.main.async {
+                    completion()
+                }
             }
         }
         
@@ -46,6 +72,12 @@ extension CreateBicycleView {
                     self.tags.remove(at: index)
                 }
             }
+        }
+        
+        private func validate() -> Bool {
+            image != UIImage() && !type.isEmpty &&
+            Int(price) ?? .zero > .zero &&
+            !condition.isEmpty && !tags.isEmpty
         }
     }
 }

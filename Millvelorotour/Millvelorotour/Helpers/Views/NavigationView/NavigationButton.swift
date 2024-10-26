@@ -19,6 +19,7 @@ struct NavigationButton: View {
                 Color.white
                 Image(imageName)
             }
+            .cornerRadius(8, corners: .allCorners)
             .overlay {
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)

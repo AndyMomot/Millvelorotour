@@ -34,10 +34,12 @@ struct TagView: View {
         }
         .padding(.vertical, 5)
         .padding(.horizontal, 9)
+        .cornerRadius(8, corners: .allCorners)
         .overlay {
-            RoundedRectangle(cornerRadius: 8)
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
                 .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
         }
+        .padding(1)
     }
 }
 

@@ -24,7 +24,9 @@ struct HomeView: View {
                             Button {
                                 print("Forward ->")
                             } label: {
-                                NavigationButton(imageName: "plus") { }
+                                NavigationButton(imageName: "plus") {
+                                    viewModel.showCreateBicycle.toggle()
+                                }
                             }
                         }
                     })
@@ -41,6 +43,7 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        .padding(.bottom, UIScreen.main.bounds.height * 0.1)
                     }
                     .scrollIndicators(.never)
                 }

@@ -26,10 +26,22 @@ struct TabBar: View {
             Text("Catalog")
                 .tag(TabBarSelectionView.catalog.rawValue)
             
-            Text("Settings")
+            VStack {
+                ScrollView {
+                    VStack {
+                        Text("Settings")
+                        
+                        ForEach(0..<10) { _ in
+                            Rectangle()
+                                .foregroundStyle(.gray)
+                                .frame(height: 100)
+                                .padding(.horizontal)
+                        }
+                    }
+                }
+            }
                 .tag(TabBarSelectionView.settings.rawValue)
         }
-        .edgesIgnoringSafeArea(.bottom)
         .overlay {
             if showTabBar {
                 VStack {
