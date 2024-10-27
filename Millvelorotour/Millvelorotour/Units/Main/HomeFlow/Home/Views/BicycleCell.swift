@@ -9,20 +9,39 @@ import SwiftUI
 
 struct BicycleCell: View {
     var model: BicycleModel
+    var onDelete: (String) -> Void
     
     @State private var image: Image?
     
     var body: some View {
         VStack(spacing: 12) {
-            if let image {
-                image
-                    .resizable()
-                    .scaledToFill()
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-            } else {
-                Asset.placeholder.swiftUIImage
-                    .resizable()
-                    .scaledToFit()
+            Group {
+                if let image {
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                } else {
+                    Asset.placeholder.swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
+            .overlay {
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button {
+                            onDelete(model.id)
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(Colors.blackCustom.swiftUIColor)
+                                .shadow(color: .white, radius: 2)
+                        }
+                    }
+                    Spacer()
+                }
+                .padding(12)
             }
             
             HStack(spacing: 12) {
@@ -82,6 +101,6 @@ private extension BicycleCell {
         price: 10000,
         condition: "New",
         tags: [.init(title: "Speed"), .init(title: "Fast")])
-    )
+    ) {_ in}
     .padding()
 }

@@ -23,5 +23,17 @@ extension HomeView {
                 }
             }
         }
+        
+        func deleteBicycle(id: String) {
+            DispatchQueue.global().async { [weak self] in
+                guard let self, 
+                let index = DefaultsService.shared.bicycles.firstIndex(where: {
+                    $0.id == id
+                }) else { return }
+                DefaultsService.shared.bicycles.remove(at: index)
+                
+                self.getBicycles()
+            }
+        }
     }
 }

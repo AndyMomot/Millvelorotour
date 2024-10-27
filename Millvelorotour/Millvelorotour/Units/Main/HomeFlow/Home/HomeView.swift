@@ -19,14 +19,9 @@ struct HomeView: View {
                 
                 VStack(spacing: 24) {
                     NavigationView(text: "Rowery", rightView:  {
-                        
                         if !viewModel.bicycles.isEmpty {
-                            Button {
-                                print("Forward ->")
-                            } label: {
-                                NavigationButton(imageName: "plus") {
-                                    viewModel.showCreateBicycle.toggle()
-                                }
+                            NavigationButton(imageName: "plus") {
+                                viewModel.showCreateBicycle.toggle()
                             }
                         }
                     })
@@ -39,7 +34,9 @@ struct HomeView: View {
                                 }
                             } else {
                                 ForEach(viewModel.bicycles) { item in
-                                    BicycleCell(model: item)
+                                    BicycleCell(model: item) { id in
+                                        viewModel.deleteBicycle(id: id)
+                                    }
                                 }
                             }
                         }

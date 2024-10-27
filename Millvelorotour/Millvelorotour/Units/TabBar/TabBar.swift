@@ -20,7 +20,7 @@ struct TabBar: View {
             HomeView()
                 .tag(TabBarSelectionView.bicycles.rawValue)
             
-            Text("Rentals")
+            RentalsView()
                 .tag(TabBarSelectionView.rentals.rawValue)
             
             Text("Catalog")

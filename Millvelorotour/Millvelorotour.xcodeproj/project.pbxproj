@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		472D12B82CCCEF6E00E9CDBA /* CreateBicycleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */; };
+		472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* InputField.swift */; };
 		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
 		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
 		472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BE2CCD05FA00E9CDBA /* ImageStorageManager.swift */; };
@@ -30,7 +30,6 @@
 		473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143782CC94ECF00655DBD /* ShareSheet.swift */; };
 		473143EF2CC94ECF00655DBD /* SwiftUIViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731437F2CC94ECF00655DBD /* SwiftUIViewWebView.swift */; };
 		473143F02CC94ECF00655DBD /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143812CC94ECF00655DBD /* DynamicHeightTextField.swift */; };
-		473143F12CC94ECF00655DBD /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143832CC94ECF00655DBD /* InputField.swift */; };
 		473143F22CC94ECF00655DBD /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143852CC94ECF00655DBD /* BackButton.swift */; };
 		473143F32CC94ECF00655DBD /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143872CC94ECF00655DBD /* CircularProgressBar.swift */; };
 		473143F42CC94ECF00655DBD /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473143892CC94ECF00655DBD /* NextButton.swift */; };
@@ -58,10 +57,14 @@
 		473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473865D22CCBD318005D77E8 /* CreateBicycleViewModel.swift */; };
 		47DD594D2CC8E32A008A623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594C2CC8E32A008A623A /* Assets.xcassets */; };
 		47DD59502CC8E32A008A623A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD594E2CC8E32A008A623A /* LaunchScreen.storyboard */; };
+		47FE5B512CCE3D6500CD7B93 /* RentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE5B502CCE3D6500CD7B93 /* RentalsView.swift */; };
+		47FE5B532CCE3D6A00CD7B93 /* RentalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE5B522CCE3D6A00CD7B93 /* RentalsViewModel.swift */; };
+		47FE5B562CCE3F8200CD7B93 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE5B552CCE3F8200CD7B93 /* SegmentedControl.swift */; };
+		47FE5B5A2CCE51F700CD7B93 /* CalculateRentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBicycleField.swift; sourceTree = "<group>"; };
+		472D12B72CCCEF6E00E9CDBA /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		472D12BE2CCD05FA00E9CDBA /* ImageStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStorageManager.swift; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		473143782CC94ECF00655DBD /* ShareSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		4731437F2CC94ECF00655DBD /* SwiftUIViewWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIViewWebView.swift; sourceTree = "<group>"; };
 		473143812CC94ECF00655DBD /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
-		473143832CC94ECF00655DBD /* InputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		473143852CC94ECF00655DBD /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		473143872CC94ECF00655DBD /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		473143892CC94ECF00655DBD /* NextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
@@ -124,6 +126,10 @@
 		47DD594C2CC8E32A008A623A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47DD594F2CC8E32A008A623A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47DD59512CC8E32A008A623A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FE5B502CCE3D6500CD7B93 /* RentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsView.swift; sourceTree = "<group>"; };
+		47FE5B522CCE3D6A00CD7B93 /* RentalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsViewModel.swift; sourceTree = "<group>"; };
+		47FE5B552CCE3F8200CD7B93 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +146,6 @@
 		472D12B62CCCEF5C00E9CDBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				472D12B72CCCEF6E00E9CDBA /* CreateBicycleField.swift */,
 				472D12BB2CCCF25000E9CDBA /* TagView.swift */,
 			);
 			path = Views;
@@ -276,6 +281,7 @@
 		473143792CC94ECF00655DBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				47FE5B542CCE3F6400CD7B93 /* SegmentedControl */,
 				473865C42CCBBA34005D77E8 /* NavigationView */,
 				4731437E2CC94ECF00655DBD /* WebView */,
 				473143802CC94ECF00655DBD /* DynamicHeightTextField */,
@@ -306,7 +312,7 @@
 		473143822CC94ECF00655DBD /* InputField */ = {
 			isa = PBXGroup;
 			children = (
-				473143832CC94ECF00655DBD /* InputField.swift */,
+				472D12B72CCCEF6E00E9CDBA /* InputField.swift */,
 			);
 			path = InputField;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				473865BE2CCBB8E7005D77E8 /* HomeFlow */,
+				47FE5B4E2CCE3C6100CD7B93 /* RentalsFlow */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -510,6 +517,40 @@
 			path = Millvelorotour;
 			sourceTree = "<group>";
 		};
+		47FE5B4E2CCE3C6100CD7B93 /* RentalsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47FE5B4F2CCE3D5E00CD7B93 /* Rentals */,
+			);
+			path = RentalsFlow;
+			sourceTree = "<group>";
+		};
+		47FE5B4F2CCE3D5E00CD7B93 /* Rentals */ = {
+			isa = PBXGroup;
+			children = (
+				47FE5B572CCE51B100CD7B93 /* Views */,
+				47FE5B502CCE3D6500CD7B93 /* RentalsView.swift */,
+				47FE5B522CCE3D6A00CD7B93 /* RentalsViewModel.swift */,
+			);
+			path = Rentals;
+			sourceTree = "<group>";
+		};
+		47FE5B542CCE3F6400CD7B93 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				47FE5B552CCE3F8200CD7B93 /* SegmentedControl.swift */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		47FE5B572CCE51B100CD7B93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,12 +647,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				472D12B82CCCEF6E00E9CDBA /* CreateBicycleField.swift in Sources */,
+				472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */,
 				473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */,
+				47FE5B562CCE3F8200CD7B93 /* SegmentedControl.swift in Sources */,
 				473143EB2CC94ECF00655DBD /* ImagePicker.swift in Sources */,
 				473143FB2CC94ECF00655DBD /* RootContentView.swift in Sources */,
 				473143D62CC94ECF00655DBD /* Double+Additions.swift in Sources */,
 				472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */,
+				47FE5B532CCE3D6A00CD7B93 /* RentalsViewModel.swift in Sources */,
 				473143F52CC94ECF00655DBD /* PreloaderView.swift in Sources */,
 				473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */,
 				473865C12CCBB904005D77E8 /* HomeView.swift in Sources */,
@@ -623,8 +666,8 @@
 				473143F42CC94ECF00655DBD /* NextButton.swift in Sources */,
 				473143D52CC94ECF00655DBD /* UINavigationController+Additions.swift in Sources */,
 				473143F02CC94ECF00655DBD /* DynamicHeightTextField.swift in Sources */,
-				473143F12CC94ECF00655DBD /* InputField.swift in Sources */,
 				4731441C2CC94ECF00655DBD /* AppDelegate.swift in Sources */,
+				47FE5B5A2CCE51F700CD7B93 /* CalculateRentView.swift in Sources */,
 				4731441A2CC94ECF00655DBD /* OnboardingViewTabView.swift in Sources */,
 				473865CA2CCBC8FD005D77E8 /* NoBicyclesView.swift in Sources */,
 				473143EF2CC94ECF00655DBD /* SwiftUIViewWebView.swift in Sources */,
@@ -650,6 +693,7 @@
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,
 				472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */,
 				472D12C12CCD0A0D00E9CDBA /* BicycleInfo.swift in Sources */,
+				47FE5B512CCE3D6500CD7B93 /* RentalsView.swift in Sources */,
 				473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */,
 				473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */,
 			);

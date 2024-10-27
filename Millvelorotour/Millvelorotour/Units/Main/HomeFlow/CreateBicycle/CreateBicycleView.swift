@@ -51,27 +51,27 @@ struct CreateBicycleView: View {
                             
                             VStack(alignment: .leading, spacing: 12) {
                                 HStack {
-                                    CreateBicycleField(
+                                    InputField(
                                         title: "Typ",
                                         text: $viewModel.type
                                     )
                                     Spacer()
                                     
-                                    CreateBicycleField(
+                                    InputField(
                                         title: "Cena",
                                         text: $viewModel.price
                                     )
                                     .keyboardType(.numberPad)
                                     Spacer()
                                     
-                                    CreateBicycleField(
+                                    InputField(
                                         title: "Stan",
                                         text: $viewModel.condition
                                     )
                                 }
                                 
                                 HStack(alignment: .bottom, spacing: 12) {
-                                    CreateBicycleField(
+                                    InputField(
                                         title: "Osobliwość",
                                         text: $viewModel.tag
                                     )
@@ -109,6 +109,8 @@ struct CreateBicycleView: View {
                             }
                         }
                         .frame(height: 48)
+                        .opacity(viewModel.isValideFields ? 1 : 0.5)
+                        .disabled(!viewModel.isValideFields)
                     }
                 }
                 .scrollIndicators(.never)
@@ -119,6 +121,41 @@ struct CreateBicycleView: View {
             ImagePicker(selectedImage: $viewModel.image)
         }
         .hideKeyboardWhenTappedAround()
+        .onChange(of: viewModel.image) { _ in
+            DispatchQueue.main.async {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    viewModel.isValideFields = viewModel.validate()
+                }
+            }
+        }
+        .onChange(of: viewModel.type) { _ in
+            DispatchQueue.main.async {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    viewModel.isValideFields = viewModel.validate()
+                }
+            }
+        }
+        .onChange(of: viewModel.price) { _ in
+            DispatchQueue.main.async {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    viewModel.isValideFields = viewModel.validate()
+                }
+            }
+        }
+        .onChange(of: viewModel.condition) { _ in
+            DispatchQueue.main.async {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    viewModel.isValideFields = viewModel.validate()
+                }
+            }
+        }
+        .onChange(of: viewModel.tags) { _ in
+            DispatchQueue.main.async {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    viewModel.isValideFields = viewModel.validate()
+                }
+            }
+        }
     }
 }
 

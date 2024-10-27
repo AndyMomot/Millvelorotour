@@ -19,6 +19,8 @@ extension CreateBicycleView {
         @Published var tag = ""
         @Published var tags: [TagModel] = []
         
+        @Published var isValideFields = false
+        
         // FUNCTIONS
         func handleTagAction(_ action: TagView.Action) {
             switch action {
@@ -74,7 +76,7 @@ extension CreateBicycleView {
             }
         }
         
-        private func validate() -> Bool {
+        func validate() -> Bool {
             image != UIImage() && !type.isEmpty &&
             Int(price) ?? .zero > .zero &&
             !condition.isEmpty && !tags.isEmpty
