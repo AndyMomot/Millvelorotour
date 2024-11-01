@@ -20,6 +20,7 @@ struct BicycleCell: View {
                     image
                         .resizable()
                         .scaledToFill()
+                        .frame(maxHeight: UIScreen.main.bounds.width * 0.8)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 } else {
                     Asset.placeholder.swiftUIImage

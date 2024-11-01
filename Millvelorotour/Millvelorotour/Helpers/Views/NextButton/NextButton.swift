@@ -30,8 +30,10 @@ struct NextButton: View {
             .cornerRadius(8, corners: .allCorners)
             .overlay {
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
+                    .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
             }
+            .padding(1)
+            .shadow(color: Colors.darkBlue.swiftUIColor.opacity(0.1), radius: 8)
         }
     }
 }
@@ -63,7 +65,7 @@ extension NextButton {
 
 #Preview {
     ZStack {
-        VStack {
+        VStack(spacing: 20) {
             NextButton(title: "Komputeryrerererer") {}
                 .frame(width: 200, height: 44)
             

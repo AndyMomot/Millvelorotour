@@ -13,6 +13,8 @@ struct CalculateRentView: View {
     @Binding var lengthOfLease: String
     @Binding var date: Date
     
+    var onNext: () -> Void
+    
     // Private
     @State private var showBikeTypes = false
     @State private var degrees: Double = -90
@@ -77,7 +79,7 @@ struct CalculateRentView: View {
             .padding(1)
             
             NextButton(title: "Obliczanie kosztu wynajmu") {
-                
+                onNext()
             }
             .frame(height: 48)
         }
@@ -89,6 +91,6 @@ struct CalculateRentView: View {
         bikeTypes: ["Classic", "Sport"],
         bikeType: .constant(""),
         lengthOfLease: .constant(""), 
-        date: .constant(.init()))
+        date: .constant(.init())) {}
     .padding()
 }

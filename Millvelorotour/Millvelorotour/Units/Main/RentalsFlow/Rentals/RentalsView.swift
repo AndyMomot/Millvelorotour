@@ -36,18 +36,31 @@ struct RentalsView: View {
                         
                         
                         ScrollView {
+                            // First segment
                             if viewModel.selectedSegment == 0 {
+                                
                                 if !viewModel.showCalculateRentCheck {
                                     CalculateRentView(
                                         bikeTypes: viewModel.bikeTypes,
                                         bikeType: $viewModel.bikeType,
                                         lengthOfLease: $viewModel.lengthOfLease,
-                                        date: $viewModel.date)
+                                        date: $viewModel.date) {
+                                            withAnimation {
+                                                viewModel.createRentCheck()
+                                            }
+                                        }
                                 } else {
-                                    
+                                    if let model = viewModel.rentResultModel {
+                                        CalculateRentResultView(model: model) {
+                                            withAnimation {
+                                                viewModel.showCalculateRentCheck = false
+                                            }
+                                        }
+                                    }
                                 }
-                            } else {
                                 
+                            } else {
+                               // Second segment
                             }
                             
                         }

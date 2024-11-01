@@ -40,6 +40,7 @@ struct CreateBicycleView: View {
                                     Image(uiImage: viewModel.image)
                                         .resizable()
                                         .scaledToFill()
+                                        .frame(maxHeight: bounds.width * 0.8)
                                         .clipShape(RoundedRectangle(cornerRadius: 8))
                                 }
  

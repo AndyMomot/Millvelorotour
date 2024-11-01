@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4725F8282CD4F98A000283D7 /* CalculateRentResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */; };
 		472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* InputField.swift */; };
 		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
 		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRentResultView.swift; sourceTree = "<group>"; };
 		472D12B72CCCEF6E00E9CDBA /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */,
+				4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				473865C32CCBB90C005D77E8 /* HomeViewModel.swift in Sources */,
 				4731441E2CC94ECF00655DBD /* FAQModel.swift in Sources */,
 				472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */,
+				4725F8282CD4F98A000283D7 /* CalculateRentResultView.swift in Sources */,
 				4731441B2CC94ECF00655DBD /* RootViewController.swift in Sources */,
 				473865C62CCBBA95005D77E8 /* NavigationView.swift in Sources */,
 				473865CC2CCBCD47005D77E8 /* BicycleCell.swift in Sources */,
