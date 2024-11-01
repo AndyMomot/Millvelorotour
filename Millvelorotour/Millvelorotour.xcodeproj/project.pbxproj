@@ -12,6 +12,15 @@
 		4725F82E2CD51A20000283D7 /* RentsFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F82D2CD51A20000283D7 /* RentsFilterView.swift */; };
 		4725F8312CD51C9E000283D7 /* RentedBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8302CD51C9E000283D7 /* RentedBikeView.swift */; };
 		4725F8332CD51F15000283D7 /* RentsFilterResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */; };
+		4725F8372CD532C5000283D7 /* PollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8362CD532C5000283D7 /* PollsView.swift */; };
+		4725F8392CD532CA000283D7 /* PollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8382CD532CA000283D7 /* PollsViewModel.swift */; };
+		4725F83B2CD53553000283D7 /* PollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F83A2CD53553000283D7 /* PollModel.swift */; };
+		4725F83E2CD5377B000283D7 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F83D2CD5377B000283D7 /* PollView.swift */; };
+		4725F8432CD54121000283D7 /* PollAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8422CD54121000283D7 /* PollAnswerCell.swift */; };
+		4725F8462CD54887000283D7 /* CatalogsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8452CD54887000283D7 /* CatalogsRootView.swift */; };
+		4725F8492CD54D68000283D7 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8482CD54D68000283D7 /* CatalogView.swift */; };
+		4725F84B2CD54D6F000283D7 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F84A2CD54D6F000283D7 /* CatalogViewModel.swift */; };
+		4725F84E2CD551E0000283D7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F84D2CD551E0000283D7 /* SearchView.swift */; };
 		472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* InputField.swift */; };
 		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
 		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
@@ -74,6 +83,15 @@
 		4725F82D2CD51A20000283D7 /* RentsFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentsFilterView.swift; sourceTree = "<group>"; };
 		4725F8302CD51C9E000283D7 /* RentedBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentedBikeView.swift; sourceTree = "<group>"; };
 		4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentsFilterResultsView.swift; sourceTree = "<group>"; };
+		4725F8362CD532C5000283D7 /* PollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsView.swift; sourceTree = "<group>"; };
+		4725F8382CD532CA000283D7 /* PollsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsViewModel.swift; sourceTree = "<group>"; };
+		4725F83A2CD53553000283D7 /* PollModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollModel.swift; sourceTree = "<group>"; };
+		4725F83D2CD5377B000283D7 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
+		4725F8422CD54121000283D7 /* PollAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollAnswerCell.swift; sourceTree = "<group>"; };
+		4725F8452CD54887000283D7 /* CatalogsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogsRootView.swift; sourceTree = "<group>"; };
+		4725F8482CD54D68000283D7 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		4725F84A2CD54D6F000283D7 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		4725F84D2CD551E0000283D7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		472D12B72CCCEF6E00E9CDBA /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
@@ -170,6 +188,61 @@
 				4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */,
 			);
 			path = Results;
+			sourceTree = "<group>";
+		};
+		4725F8342CD53220000283D7 /* CatalogFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4725F8442CD54871000283D7 /* CatalogsRoot */,
+				4725F8352CD53232000283D7 /* Polls */,
+				4725F8472CD54D53000283D7 /* Catalog */,
+			);
+			path = CatalogFlow;
+			sourceTree = "<group>";
+		};
+		4725F8352CD53232000283D7 /* Polls */ = {
+			isa = PBXGroup;
+			children = (
+				4725F83C2CD53773000283D7 /* Views */,
+				4725F8362CD532C5000283D7 /* PollsView.swift */,
+				4725F8382CD532CA000283D7 /* PollsViewModel.swift */,
+			);
+			path = Polls;
+			sourceTree = "<group>";
+		};
+		4725F83C2CD53773000283D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4725F83D2CD5377B000283D7 /* PollView.swift */,
+				4725F8422CD54121000283D7 /* PollAnswerCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4725F8442CD54871000283D7 /* CatalogsRoot */ = {
+			isa = PBXGroup;
+			children = (
+				4725F8452CD54887000283D7 /* CatalogsRootView.swift */,
+			);
+			path = CatalogsRoot;
+			sourceTree = "<group>";
+		};
+		4725F8472CD54D53000283D7 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				4725F84C2CD551D2000283D7 /* Views */,
+				4725F8482CD54D68000283D7 /* CatalogView.swift */,
+				4725F84A2CD54D6F000283D7 /* CatalogViewModel.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		4725F84C2CD551D2000283D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4725F84D2CD551E0000283D7 /* SearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		472D12B62CCCEF5C00E9CDBA /* Views */ = {
@@ -414,6 +487,7 @@
 			children = (
 				473865BE2CCBB8E7005D77E8 /* HomeFlow */,
 				47FE5B4E2CCE3C6100CD7B93 /* RentalsFlow */,
+				4725F8342CD53220000283D7 /* CatalogFlow */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -461,6 +535,7 @@
 				473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */,
 				472D12B92CCCF21900E9CDBA /* TagModel.swift */,
 				4725F8292CD5161C000283D7 /* CalculateRentResultModel.swift */,
+				4725F83A2CD53553000283D7 /* PollModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -680,15 +755,19 @@
 			files = (
 				472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */,
 				473865D32CCBD318005D77E8 /* CreateBicycleViewModel.swift in Sources */,
+				4725F83B2CD53553000283D7 /* PollModel.swift in Sources */,
 				47FE5B562CCE3F8200CD7B93 /* SegmentedControl.swift in Sources */,
 				473143EB2CC94ECF00655DBD /* ImagePicker.swift in Sources */,
 				473143FB2CC94ECF00655DBD /* RootContentView.swift in Sources */,
+				4725F8392CD532CA000283D7 /* PollsViewModel.swift in Sources */,
 				473143D62CC94ECF00655DBD /* Double+Additions.swift in Sources */,
 				472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */,
 				47FE5B532CCE3D6A00CD7B93 /* RentalsViewModel.swift in Sources */,
+				4725F84E2CD551E0000283D7 /* SearchView.swift in Sources */,
 				4725F8332CD51F15000283D7 /* RentsFilterResultsView.swift in Sources */,
 				473143F52CC94ECF00655DBD /* PreloaderView.swift in Sources */,
 				473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */,
+				4725F8372CD532C5000283D7 /* PollsView.swift in Sources */,
 				473865C12CCBB904005D77E8 /* HomeView.swift in Sources */,
 				473143D22CC94ECF00655DBD /* NotificationManager.swift in Sources */,
 				473143D92CC94ECF00655DBD /* String+Additions.swift in Sources */,
@@ -708,6 +787,7 @@
 				473143F32CC94ECF00655DBD /* CircularProgressBar.swift in Sources */,
 				4731441D2CC94ECF00655DBD /* SceneDelegate.swift in Sources */,
 				473143D72CC94ECF00655DBD /* Date+Additions.swift in Sources */,
+				4725F8492CD54D68000283D7 /* CatalogView.swift in Sources */,
 				473143D32CC94ECF00655DBD /* DefaultsService.swift in Sources */,
 				473144182CC94ECF00655DBD /* OnboardingView.swift in Sources */,
 				4725F8312CD51C9E000283D7 /* RentedBikeView.swift in Sources */,
@@ -716,13 +796,17 @@
 				473143F72CC94ECF00655DBD /* TabBar.swift in Sources */,
 				473143DD2CC94ECF00655DBD /* Colors.generated.swift in Sources */,
 				473144192CC94ECF00655DBD /* OnboardingViewModel.swift in Sources */,
+				4725F83E2CD5377B000283D7 /* PollView.swift in Sources */,
 				473143FA2CC94ECF00655DBD /* RootContentViewModel.swift in Sources */,
 				473865C32CCBB90C005D77E8 /* HomeViewModel.swift in Sources */,
+				4725F8432CD54121000283D7 /* PollAnswerCell.swift in Sources */,
 				4731441E2CC94ECF00655DBD /* FAQModel.swift in Sources */,
 				472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */,
 				4725F8282CD4F98A000283D7 /* CalculateRentResultView.swift in Sources */,
 				4731441B2CC94ECF00655DBD /* RootViewController.swift in Sources */,
+				4725F84B2CD54D6F000283D7 /* CatalogViewModel.swift in Sources */,
 				473865C62CCBBA95005D77E8 /* NavigationView.swift in Sources */,
+				4725F8462CD54887000283D7 /* CatalogsRootView.swift in Sources */,
 				473865CC2CCBCD47005D77E8 /* BicycleCell.swift in Sources */,
 				473865D12CCBD311005D77E8 /* CreateBicycleView.swift in Sources */,
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,

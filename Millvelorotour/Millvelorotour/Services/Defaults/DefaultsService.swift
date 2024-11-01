@@ -52,6 +52,15 @@ extension DefaultsService {
             }
         }
     }
+    
+    var compleatedPolls: Bool {
+        get {
+            standard.bool(forKey: Keys.compleatedPolls.rawValue)
+        }
+        set {
+            standard.set(newValue, forKey: Keys.compleatedPolls.rawValue)
+        }
+    }
 }
 
 extension DefaultsService {
@@ -68,5 +77,6 @@ extension DefaultsService {
         case flow
         case bicycles
         case calculateRentResults
+        case compleatedPolls
     }
 }

@@ -28,22 +28,6 @@ struct BicycleCell: View {
                         .scaledToFit()
                 }
             }
-            .overlay {
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button {
-                            onDelete(model.id)
-                        } label: {
-                            Image(systemName: "trash.fill")
-                                .foregroundStyle(Colors.blackCustom.swiftUIColor)
-                                .shadow(color: .white.opacity(0.5), radius: 2)
-                        }
-                    }
-                    Spacer()
-                }
-                .padding(12)
-            }
             
             HStack(spacing: 12) {
                 Spacer()
@@ -61,17 +45,27 @@ struct BicycleCell: View {
                 .multilineTextAlignment(.center)
                 .padding(.top)
             
-            ScrollView(.horizontal) {
-                HStack(spacing: 8) {
-                    ForEach(model.tags, id: \.self) { tag in
-                        TagView(model: tag, style: .info)
+            HStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 8) {
+                        ForEach(model.tags, id: \.self) { tag in
+                            TagView(model: tag, style: .info)
+                        }
                     }
+                }
+                
+                Button {
+                    onDelete(model.id)
+                } label: {
+                    Image(systemName: "trash.fill")
+                        .foregroundStyle(Colors.blackCustom.swiftUIColor)
+                        .shadow(color: .white.opacity(0.5), radius: 2)
                 }
             }
         }
         .padding(12)
-        .cornerRadius(8, corners: .allCorners)
         .background(.white)
+        .cornerRadius(8, corners: .allCorners)
         .overlay {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
                 .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)

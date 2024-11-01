@@ -23,7 +23,7 @@ struct TabBar: View {
             RentalsView()
                 .tag(TabBarSelectionView.rentals.rawValue)
             
-            Text("Catalog")
+            CatalogsRootView()
                 .tag(TabBarSelectionView.catalog.rawValue)
             
             VStack {
