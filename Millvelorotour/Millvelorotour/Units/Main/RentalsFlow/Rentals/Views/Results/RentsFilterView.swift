@@ -1,16 +1,15 @@
 //
-//  CalculateRentView.swift
+//  RentsFilterView.swift
 //  Millvelorotour
 //
-//  Created by Andrii Momot on 27.10.2024.
+//  Created by Andrii Momot on 01.11.2024.
 //
 
 import SwiftUI
 
-struct CalculateRentView: View {
+struct RentsFilterView: View {
     var bikeTypes: [String]
     @Binding var bikeType: String
-    @Binding var lengthOfLease: String
     @Binding var date: Date
     
     var onNext: () -> Void
@@ -21,7 +20,7 @@ struct CalculateRentView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            VStack(spacing: 24) {
+            VStack(spacing: 12) {
                 HStack {
                     InputField(title: "Typ Rowery",
                                text: $bikeType)
@@ -54,16 +53,11 @@ struct CalculateRentView: View {
                     }
                 }
                 
-                InputField(title: "Długość najmu",
-                           placeholder: "0h",
-                           text: $lengthOfLease)
-                .keyboardType(.numberPad)
-                
                 DatePicker(
                     selection: $date,
                     in: Date()...,
-                    displayedComponents: [.date, .hourAndMinute]) {
-                        Text("Data i godzina")
+                    displayedComponents: [.date]) {
+                        Text("Data")
                             .foregroundStyle(Colors.blackCustom.swiftUIColor)
                             .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 12))
                     }
@@ -71,26 +65,27 @@ struct CalculateRentView: View {
             }
             .padding(12)
             .background(.white)
-            .cornerRadius(8, corners: .allCorners)
             .overlay {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
+                    .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
             }
             .padding(1)
             
-            NextButton(title: "Obliczanie kosztu wynajmu") {
-                onNext()
-            }
-            .frame(height: 48)
+            NextButton(
+                title: "Obliczanie kosztu wynajmu") {
+                    onNext()
+                }
+                .frame(height: 44)
+            
+            
         }
     }
 }
 
 #Preview {
-    CalculateRentView(
+    RentsFilterView(
         bikeTypes: ["Classic", "Sport"],
-        bikeType: .constant(""),
-        lengthOfLease: .constant(""), 
+        bikeType: .constant(""), 
         date: .constant(.init())) {}
-    .padding()
+        .padding()
 }

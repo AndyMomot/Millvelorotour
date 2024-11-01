@@ -16,13 +16,15 @@ extension RentalsView {
         
         @Published var bicycles: [BicycleModel] = []
         @Published var bikeTypes: [String] = []
+        @Published var rentResults: [CalculateRentResultModel] = []
         
         @Published var bikeType = ""
         @Published var lengthOfLease = ""
         @Published var date = Date()
         @Published var showCalculateRentCheck = false
+        @Published var showRentsFilterResults = false
         
-        var rentResultModel: CalculateRentResultView.CalculateRentResultModel?
+        var rentResultModel: CalculateRentResultModel?
         
         func getBicycles() {
             DispatchQueue.global().async {
@@ -53,16 +55,59 @@ extension RentalsView {
                 
                 amount = rentPerHour * hours
                 
-                self.rentResultModel = CalculateRentResultView.CalculateRentResultModel(
+                let model = CalculateRentResultModel(
                     type: self.bikeType,
-                    lengthOfLease: self.lengthOfLease,
-                    date: self.date.toString(format: .ddMMyyyy),
-                    time: self.date.toString(format: .HHMM),
-                    amount: "\(amount)".toNumberFormat()
+                    date: self.date,
+                    lengthOfLease: hours,
+                    amount: amount
                 )
+                
+                self.rentResultModel = model
+                
+                DefaultsService.shared.calculateRentResults.append(model)
                 
                 DispatchQueue.main.async { [self] in
                     self.showCalculateRentCheck = true
+                }
+            }
+        }
+        
+        func searchRentChecks() {
+            DispatchQueue.global().async { [weak self] in
+                guard let self, !self.bikeType.isEmpty else { return }
+                let rentResults = DefaultsService.shared.calculateRentResults.sorted(by: {
+                    $0.date < $1.date
+                })
+                    .filter {
+                        $0.type == self.bikeType &&
+                        $0.date.toString(format: .ddMMyyyy) == self.date.toString(format: .ddMMyyyy)
+                    }
+                
+                DispatchQueue.main.async { [self] in
+                    self.rentResults = rentResults
+                    self.showRentsFilterResults = true
+                }
+            }
+        }
+        
+        func handleCheckItem(action: RentsFilterResultsView.ViewAction) {
+            switch action {
+            case .delete(let id):
+                DispatchQueue.global().async { [weak self] in
+                    guard let self else { return }
+                    
+                    if let index = DefaultsService.shared.calculateRentResults.firstIndex(where: {
+                        $0.id == id
+                    }) {
+                        DefaultsService.shared.calculateRentResults.remove(at: index)
+                    }
+                    
+                    self.searchRentChecks()
+                }
+            case .onNext:
+                DispatchQueue.main.async { [weak self] in
+                    guard let self else { return }
+                    self.showRentsFilterResults = false
                 }
             }
         }

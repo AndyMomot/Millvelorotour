@@ -13,7 +13,7 @@ struct CalculateRentResultView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            VStack(spacing: 24) {
+            VStack(spacing: 12) {
                 HStack {
                     Text("Obliczenia")
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
@@ -36,7 +36,7 @@ struct CalculateRentResultView: View {
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 12))
                     Spacer()
-                    Text(model.lengthOfLease + "h")
+                    Text("\(model.lengthOfLease)h")
                         .foregroundStyle(Colors.darkGrey.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
                 }
@@ -46,7 +46,7 @@ struct CalculateRentResultView: View {
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 12))
                     Spacer()
-                    Text(model.date)
+                    Text(model.date.toString(format: .ddMMyyyy))
                         .foregroundStyle(Colors.darkGrey.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
                 }
@@ -56,7 +56,7 @@ struct CalculateRentResultView: View {
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 12))
                     Spacer()
-                    Text(model.time)
+                    Text(model.date.toString(format: .HHMM))
                         .foregroundStyle(Colors.darkGrey.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
                 }
@@ -67,15 +67,16 @@ struct CalculateRentResultView: View {
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 18))
                     Spacer()
-                    Text(model.amount)
+                    Text("\(model.amount)".toNumberFormat())
                         .foregroundStyle(Colors.blackCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 24))
                 }
             }
             .padding(12)
+            .background(.white)
             .overlay {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
+                    .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
             }
             .padding(1)
             
@@ -90,20 +91,12 @@ struct CalculateRentResultView: View {
 }
 
 #Preview {
-    CalculateRentResultView(model: .init(
-        type: "Szosowe",
-        lengthOfLease: "3",
-        date: "14.10.2024",
-        time: "13:00",
-        amount: "1 200"
-    )) {}
+    CalculateRentResultView(model:
+            .init(
+                type: "Szosowe",
+                date: .init(),
+                lengthOfLease: 3,
+                amount: 1200
+            )) {}
     .padding()
 }
-
-
-extension CalculateRentResultView {
-    struct CalculateRentResultModel {
-        var type, lengthOfLease, date, time, amount: String
-    }
-}
-

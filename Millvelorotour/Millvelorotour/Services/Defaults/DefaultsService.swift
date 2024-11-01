@@ -37,6 +37,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var calculateRentResults: [CalculateRentResultModel] {
+        get {
+            guard let data = standard.object(forKey: Keys.calculateRentResults.rawValue) as? Data else {
+                return []
+            }
+            let items = try? JSONDecoder().decode([CalculateRentResultModel].self, from: data)
+            return items ?? []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.setValue(data, forKey: Keys.calculateRentResults.rawValue)
+            }
+        }
+    }
 }
 
 extension DefaultsService {
@@ -52,5 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case bicycles
+        case calculateRentResults
     }
 }

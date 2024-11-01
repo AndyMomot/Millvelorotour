@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4725F8282CD4F98A000283D7 /* CalculateRentResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */; };
+		4725F82A2CD5161C000283D7 /* CalculateRentResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8292CD5161C000283D7 /* CalculateRentResultModel.swift */; };
+		4725F82E2CD51A20000283D7 /* RentsFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F82D2CD51A20000283D7 /* RentsFilterView.swift */; };
+		4725F8312CD51C9E000283D7 /* RentedBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8302CD51C9E000283D7 /* RentedBikeView.swift */; };
+		4725F8332CD51F15000283D7 /* RentsFilterResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */; };
 		472D12B82CCCEF6E00E9CDBA /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B72CCCEF6E00E9CDBA /* InputField.swift */; };
 		472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12B92CCCF21900E9CDBA /* TagModel.swift */; };
 		472D12BC2CCCF25000E9CDBA /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D12BB2CCCF25000E9CDBA /* TagView.swift */; };
@@ -66,6 +70,10 @@
 
 /* Begin PBXFileReference section */
 		4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRentResultView.swift; sourceTree = "<group>"; };
+		4725F8292CD5161C000283D7 /* CalculateRentResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRentResultModel.swift; sourceTree = "<group>"; };
+		4725F82D2CD51A20000283D7 /* RentsFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentsFilterView.swift; sourceTree = "<group>"; };
+		4725F8302CD51C9E000283D7 /* RentedBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentedBikeView.swift; sourceTree = "<group>"; };
+		4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentsFilterResultsView.swift; sourceTree = "<group>"; };
 		472D12B72CCCEF6E00E9CDBA /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		472D12B92CCCF21900E9CDBA /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		472D12BB2CCCF25000E9CDBA /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
@@ -145,6 +153,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4725F82B2CD519AB000283D7 /* Calculations */ = {
+			isa = PBXGroup;
+			children = (
+				47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */,
+				4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */,
+			);
+			path = Calculations;
+			sourceTree = "<group>";
+		};
+		4725F82C2CD519C9000283D7 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				4725F82D2CD51A20000283D7 /* RentsFilterView.swift */,
+				4725F8302CD51C9E000283D7 /* RentedBikeView.swift */,
+				4725F8322CD51F15000283D7 /* RentsFilterResultsView.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
 		472D12B62CCCEF5C00E9CDBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +460,7 @@
 				473143D02CC94ECF00655DBD /* FAQModel.swift */,
 				473865BA2CCBB0FE005D77E8 /* BicycleModel.swift */,
 				472D12B92CCCF21900E9CDBA /* TagModel.swift */,
+				4725F8292CD5161C000283D7 /* CalculateRentResultModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,8 +576,8 @@
 		47FE5B572CCE51B100CD7B93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				47FE5B592CCE51F700CD7B93 /* CalculateRentView.swift */,
-				4725F8272CD4F98A000283D7 /* CalculateRentResultView.swift */,
+				4725F82B2CD519AB000283D7 /* Calculations */,
+				4725F82C2CD519C9000283D7 /* Results */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -658,6 +686,7 @@
 				473143D62CC94ECF00655DBD /* Double+Additions.swift in Sources */,
 				472D12BF2CCD05FA00E9CDBA /* ImageStorageManager.swift in Sources */,
 				47FE5B532CCE3D6A00CD7B93 /* RentalsViewModel.swift in Sources */,
+				4725F8332CD51F15000283D7 /* RentsFilterResultsView.swift in Sources */,
 				473143F52CC94ECF00655DBD /* PreloaderView.swift in Sources */,
 				473865BB2CCBB0FE005D77E8 /* BicycleModel.swift in Sources */,
 				473865C12CCBB904005D77E8 /* HomeView.swift in Sources */,
@@ -675,11 +704,13 @@
 				473865CA2CCBC8FD005D77E8 /* NoBicyclesView.swift in Sources */,
 				473143EF2CC94ECF00655DBD /* SwiftUIViewWebView.swift in Sources */,
 				473143E22CC94ECF00655DBD /* Fonts.generated.swift in Sources */,
+				4725F82E2CD51A20000283D7 /* RentsFilterView.swift in Sources */,
 				473143F32CC94ECF00655DBD /* CircularProgressBar.swift in Sources */,
 				4731441D2CC94ECF00655DBD /* SceneDelegate.swift in Sources */,
 				473143D72CC94ECF00655DBD /* Date+Additions.swift in Sources */,
 				473143D32CC94ECF00655DBD /* DefaultsService.swift in Sources */,
 				473144182CC94ECF00655DBD /* OnboardingView.swift in Sources */,
+				4725F8312CD51C9E000283D7 /* RentedBikeView.swift in Sources */,
 				473143F92CC94ECF00655DBD /* TabBarViewModel.swift in Sources */,
 				473143D42CC94ECF00655DBD /* FileManagerService.swift in Sources */,
 				473143F72CC94ECF00655DBD /* TabBar.swift in Sources */,
@@ -697,6 +728,7 @@
 				473143D82CC94ECF00655DBD /* View+Additions.swift in Sources */,
 				472D12BA2CCCF21900E9CDBA /* TagModel.swift in Sources */,
 				472D12C12CCD0A0D00E9CDBA /* BicycleInfo.swift in Sources */,
+				4725F82A2CD5161C000283D7 /* CalculateRentResultModel.swift in Sources */,
 				47FE5B512CCE3D6500CD7B93 /* RentalsView.swift in Sources */,
 				473143EC2CC94ECF00655DBD /* ShareSheet.swift in Sources */,
 				473865CE2CCBCFD3005D77E8 /* NavigationButton.swift in Sources */,

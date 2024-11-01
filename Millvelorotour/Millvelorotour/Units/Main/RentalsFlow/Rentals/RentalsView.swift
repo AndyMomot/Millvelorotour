@@ -60,9 +60,21 @@ struct RentalsView: View {
                                 }
                                 
                             } else {
-                               // Second segment
+                                // Second segment
+                                if !viewModel.showRentsFilterResults {
+                                    RentsFilterView(
+                                        bikeTypes: viewModel.bikeTypes,
+                                        bikeType: $viewModel.bikeType,
+                                        date: $viewModel.date) {
+                                            viewModel.searchRentChecks()
+                                        }
+                                } else {
+                                    RentsFilterResultsView(
+                                        items: viewModel.rentResults) { action in
+                                            viewModel.handleCheckItem(action: action)
+                                        }
+                                }
                             }
-                            
                         }
                         .menuIndicator(.hidden)
                     }

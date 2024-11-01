@@ -35,9 +35,9 @@ struct BicycleCell: View {
                         Button {
                             onDelete(model.id)
                         } label: {
-                            Image(systemName: "xmark.circle.fill")
+                            Image(systemName: "trash.fill")
                                 .foregroundStyle(Colors.blackCustom.swiftUIColor)
-                                .shadow(color: .white, radius: 2)
+                                .shadow(color: .white.opacity(0.5), radius: 2)
                         }
                     }
                     Spacer()
@@ -74,7 +74,7 @@ struct BicycleCell: View {
         .background(.white)
         .overlay {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
+                .stroke(Colors.skyBlue.swiftUIColor, lineWidth: 1)
         }
         .padding(1)
         .onAppear {
