@@ -26,20 +26,7 @@ struct TabBar: View {
             CatalogsRootView()
                 .tag(TabBarSelectionView.catalog.rawValue)
             
-            VStack {
-                ScrollView {
-                    VStack {
-                        Text("Settings")
-                        
-                        ForEach(0..<10) { _ in
-                            Rectangle()
-                                .foregroundStyle(.gray)
-                                .frame(height: 100)
-                                .padding(.horizontal)
-                        }
-                    }
-                }
-            }
+            SettingsView()
                 .tag(TabBarSelectionView.settings.rawValue)
         }
         .overlay {

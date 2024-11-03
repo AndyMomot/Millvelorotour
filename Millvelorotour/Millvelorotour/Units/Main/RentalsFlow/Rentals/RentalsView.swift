@@ -81,6 +81,7 @@ struct RentalsView: View {
                 }
                 .padding(.horizontal, 16)
             }
+            .hideKeyboardWhenTappedAround()
             .navigationDestination(isPresented: $viewModel.showCreateBicycle) {
                 CreateBicycleView()
             }

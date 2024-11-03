@@ -61,6 +61,24 @@ extension DefaultsService {
             standard.set(newValue, forKey: Keys.compleatedPolls.rawValue)
         }
     }
+    
+    var isBikeReturnReminder: Bool {
+        get {
+            standard.bool(forKey: Keys.isBikeReturnReminder.rawValue)
+        }
+        set {
+            standard.set(newValue, forKey: Keys.isBikeReturnReminder.rawValue)
+        }
+    }
+    
+    var isNotificationSounds: Bool {
+        get {
+            standard.bool(forKey: Keys.isNotificationSounds.rawValue)
+        }
+        set {
+            standard.set(newValue, forKey: Keys.isNotificationSounds.rawValue)
+        }
+    }
 }
 
 extension DefaultsService {
@@ -78,5 +96,8 @@ extension DefaultsService {
         case bicycles
         case calculateRentResults
         case compleatedPolls
+        
+        case isBikeReturnReminder
+        case isNotificationSounds
     }
 }

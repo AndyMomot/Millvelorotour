@@ -76,7 +76,6 @@ struct SearchView: View {
                         Button {
                             withAnimation {
                                 clear()
-                                showFilter.toggle()
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
