@@ -49,15 +49,37 @@ extension CatalogView {
         func filterBicycle() {
             DispatchSerialQueue.global().async { [weak self] in
                 guard let self else { return }
-                var bicycles: [BicycleModel] = []
+                var bicycles = DefaultsService.shared.bicycles
                 
-                if self.text.isEmpty {
-                    bicycles = DefaultsService.shared.bicycles
-                } else {
-                    bicycles = DefaultsService.shared.bicycles.filter {
+                if !self.text.isEmpty {
+                    bicycles = bicycles.filter {
                         $0.tags.contains(where: {
                             $0.title.lowercased().contains(self.text.lowercased())
                         })
+                    }
+                }
+                
+                if !self.type.isEmpty {
+                    bicycles = bicycles.filter {
+                        $0.type.lowercased().contains(self.type.lowercased())
+                    }
+                }
+                
+                if !self.condition.isEmpty {
+                    bicycles = bicycles.filter {
+                        $0.condition.lowercased().contains(self.condition.lowercased())
+                    }
+                }
+                
+                if !self.priceFrom.isEmpty {
+                    bicycles = bicycles.filter {
+                        $0.price >= Int(self.priceFrom) ?? .zero
+                    }
+                }
+                
+                if !self.priceTo.isEmpty {
+                    bicycles = bicycles.filter {
+                        $0.price <= Int(self.priceTo) ?? .zero
                     }
                 }
                 

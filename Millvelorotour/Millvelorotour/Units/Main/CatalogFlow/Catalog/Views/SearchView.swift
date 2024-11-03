@@ -74,7 +74,10 @@ struct SearchView: View {
                             .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
                         Spacer()
                         Button {
-                            withAnimation { showFilter.toggle() }
+                            withAnimation {
+                                clear()
+                                showFilter.toggle()
+                            }
                         } label: {
                             Image(systemName: "xmark.circle")
                                 .foregroundStyle(Colors.blackCustom.swiftUIColor)
@@ -176,18 +179,14 @@ struct SearchView: View {
     }
 }
 
-#Preview {
-    ZStack {
-        Asset.background.swiftUIImage
-            .resizable()
-        
-        SearchView(text: .constant(""),
-                   type: .constant(""),
-                   condition: .constant(""),
-                   priceFrom: .constant(""),
-                   priceTo: .constant(""),
-                   bikeTypes: ["Classic", "Sport"],
-                   bikeConditions: ["New", "Used"])
-        .padding()
+private extension SearchView {
+    func clear() {
+        DispatchQueue.main.async {
+            text = ""
+            type = ""
+            condition = ""
+            priceFrom = ""
+            priceTo = ""
+        }
     }
 }
