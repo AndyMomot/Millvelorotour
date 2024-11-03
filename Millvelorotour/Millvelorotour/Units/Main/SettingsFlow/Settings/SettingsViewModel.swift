@@ -16,7 +16,7 @@ extension SettingsView {
         @Published var isNotificationSounds = false
         @Published var showPrivacyPolicy = false
         
-        let privacyPolicyURL = URL(string: "https://google.com")
+        let privacyPolicyURL = URL(string: "https://millvelorotour.info/")
         let versionCode = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         
         func getFlags() {

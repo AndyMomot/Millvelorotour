@@ -10,7 +10,7 @@ import Foundation
 extension OnboardingView {
     final class OnboardingViewModel: ObservableObject {
         @Published var showPrivacyPolicy = false
-        let privacyPolicyURL = URL(string: "https://google.com")
+        let privacyPolicyURL = URL(string: "https://millvelorotour.info/")
         
         func showMainFlow(rootViewModel: RootContentView.RootContentViewModel) {
             DispatchQueue.main.async {

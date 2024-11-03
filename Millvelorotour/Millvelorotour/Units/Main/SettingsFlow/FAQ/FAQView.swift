@@ -29,7 +29,7 @@ struct FAQView: View {
                     VStack(spacing: 12) {
                         ForEach(viewModel.faqItems.indices, id: \.self) { index in
                             let faq = viewModel.faqItems[index]
-                            FAQCell(index: index, model: faq)
+                            FAQCell(index: index + 1, model: faq)
                         }
                     }
                     .padding(12)
@@ -43,6 +43,7 @@ struct FAQView: View {
                     .padding(.horizontal, 16)
                     .padding(.bottom, UIScreen.main.bounds.height * 0.1)
                 }
+                .scrollIndicators(.hidden)
             }
         }
     }

@@ -47,7 +47,7 @@ struct SettingsView: View {
                             SettingsButton(
                                 type: .value(
                                     title: "Wersja aplikacji",
-                                    value: viewModel.versionCode
+                                    value: viewModel.versionCode + "v"
                                 ), showUnderLine: false)
                         }
                         .padding(12)
